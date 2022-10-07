@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTENT</title>
+
+    <!-- 
+    - favicon
+-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- 
+    - custom css link
+-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+-->
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Manrope#standard-styles" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap');"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+-->
+    >
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+-->
+
+    <header  class="header" data-header>
+      <div class="container">
+        <a href="#home">
+          <img
+            src="assets/images/logo.png"
+            alt="#home"
+            title="Your logo"
+            style="height: 65px"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <img
+              src="assets/images/logo.png"
+              alt="Your logo"
+              title="Your logo"
+              style="height: 35px"
+            />
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul style="font-family: Manrope;" class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Главная</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#aboutt" class="navbar-link" data-nav-toggler>О нас</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-toggler>Курсы</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-toggler>Блог и Новости</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-link" data-nav-toggler>Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <span style="font-family: Manrope;" class="dropdown">
+            <button>Русский</button>
+            <label>
+              <input type="checkbox" />
+              <ul>
+                <li><a href="./index.html">English</a></li>
+                <li><a href="./ru.html">Русский</a></li>
+                <li><a href="./uz.html">O'zbekcha</a></li>
+              </ul>
+            </label>
+          </span>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+-->
+
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button
+          class="search-close-btn"
+          aria-label="Close search"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div style="font-family: Manrope;" class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Поиск..."
+            aria-label="Search"
+            class="search-field"
+          />
+
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+    -->
+
+        <section 
+          class="hero"
+          id="home"
+          aria-label="hero"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div style="font-family: Manrope;" class="container">
+            <div class="hero-content">
+              <p class="section-subtitle">
+                Учитесь в удобное время в своем темпе
+              </p>
+
+              <h2 style="font-size: 50px; color: white">
+                Образование<br><span style="font-size: 45px;" >это академическое превосходство.</span>
+              </h2>
+
+              <p class="hero-text" style="color: white">
+                Мы предоставляем современную платформу онлайн-обучения,
+                 доступ из любой точки мира, обучение доступно 24/7.
+              </p>
+
+              <a href="#courses " class="btn btn-primary">
+                <span class="span">Зарегистрироваться</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #CATEGORY
+    -->
+
+        <section style="font-family: Manrope;" class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle1">Категории курсов</p>
+
+            <h2 class="h2 section-title"><b>Наши курсы</b></h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="english.html">Английский<br>(IELTS & CEFR)</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus, Eng</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Русский язык</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus, Eng</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Немецкий язык</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Арабский язык</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Веб дизайн</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Мобильная разработка</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Веб разработка</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">DevOps инженеринг</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus</span>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">СММ маркетинг</a>
+                    </h3>
+
+                    <span class="card-meta">Uzb, Rus, Eng</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+    -->
+
+        <section style="font-family: Manrope;" class="section about" id="aboutt" aria-label="about">
+          <br /><br /><br /><br /><br /><br />
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="450"
+                height="590"
+                loading="lazy"
+                alt="about banner"
+                class="w-100 about-img"
+              />
+
+              <img
+                src="./assets/images/about-abs-1.jpg"
+                width="188"
+                height="242"
+                loading="lazy"
+                aria-hidden="true"
+                class="abs-img abs-img-1"
+              />
+
+              <img
+                src="./assets/images/about-abs-2.jpg"
+                width="150"
+                height="200"
+                loading="lazy"
+                aria-hidden="true"
+                class="abs-img abs-img-2"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle" style="color: #a00000">О нас</p>
+
+              <h2 style="font-size: 38px" class="h2 section-title">
+                Что мы предлагаем для учащимся.
+              </h2>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <div>
+                    <img
+                      src="./assets/images/icon.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <div>
+                    <h3 class="h3 item-title">Интерактивный класс</h3>
+
+                    <p class="item-text">
+                      Цифровая среда обучения, которая позволяет учителям и
+                      студентам подключиться в Интернете в режиме реального времени.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div>
+                    <img
+                      src="./assets/images/icon.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <div>
+                    <h3 class="h3 item-title">Поддержка менторов</h3>
+
+                    <p class="item-text">
+                      Наши курсы создают благоприятную среду обучения
+                      преподавателям, студентам, чтобы учиться и расти вместе.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div>
+                    <img
+                      src="./assets/images/icon.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <div>
+                    <h3 class="h3 item-title">Умный календарь</h3>
+
+                    <p class="item-text">
+                      Это особенно эффективно для тех, кто
+                       нуждается в этой информации может увидеть его мгновенно.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div>
+                    <img
+                      src="./assets/images/icon.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <div>
+                    <h3 class="h3 item-title">Удобные способы оплаты</h3>
+
+                    <p class="item-text">
+                      Ландшафт платежей постоянно развивается. Вы можете заплатить
+                      с помощью кредитных карт, дебетовых карт или наличными.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <a href="https://t.me/intenthub" class="btn btn-primary">
+                <span class="span">Подробнее</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #COURSE
+    -->
+
+        <section style="font-family: Manrope;"
+          class="section course"
+          id="courses"
+          aria-label="course"
+          style="background-image: url('./assets/images/course-bg.jpg')"
+        >
+          <div class="container">
+            <p class="section-subtitle" style="color: #a00000">
+              Популярные курсы
+            </p>
+
+            <h2 class="h2 section-title">Наши популярные курсы</h2>
+
+            <ul class="grid-list">
+              <!--Basic-->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/basic.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Achieving Advanced in Insights with Big"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Начальный</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">14 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1ч 30мин</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Научитесь думать об английской грамматике по-новому,
+                        это легко и весело.</a
+                      >
+                    </h3>
+
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">350.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">max-8 учеников</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Intermediate  -->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/intermediate.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Competitive Strategy law for all students"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Средний</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">14 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1ч 30мин</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Советы по обучению для студентов среднего уровня английского языка.</a
+                      >
+                    </h3>
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">400.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">max-8 учеников</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Intensive courses  -->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/Intensive.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Machine Learning A-Z: Hands-On Python and java"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Интенсивные курсы</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">20 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1ч 30мин</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Мы предлагаем вам максимальное количество дополнительных занятий.</a
+                      >
+                    </h3>
+
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">600.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">max-5 учеников</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Kids english  -->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/kids.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Education Makes A Person A Responsible Citizen"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Английский для детей</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">12 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1h 00min</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Английский для детей: анимационные видеоуроки, веселые игры и многое.</a
+                      >
+                    </h3>
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">350.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">max-6 детишек:)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Dutch Language-->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/Individual.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Building A Better World One Student At A Time"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Индивидуальный</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">14 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1ч 00мин</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Расширьте свои знания, записавшись на индивидуальный
+                        курс.</a
+                      >
+                    </h3>
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">600.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">Только вы:)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Russian Language-->
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/russian.png"
+                      width="370"
+                      height="270"
+                      loading="lazy"
+                      alt="Education is About Forming Faithful Disciples"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Русский язык</span>
+
+                    <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="reader-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">14 занятий/месяц</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >1ч 30мин</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a class="card-title"
+                        >Откройте для себя самый быстрый способ выучить русский язык с нами.
+                        </a
+                      >
+                    </h3>
+
+                    <div
+                      style="min-height: 50px; max-width: max-content"
+                      class="header-action-btn login-btn"
+                    >
+                      <a style="color: white" data-join-toggler
+                        ><b>Записаться</b></a
+                      >
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">350.000 UZS</span>
+                      </div>
+
+                      <div class="card-meta-item">
+                        <ion-icon
+                          name="people-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="card-meta-text">max-8 учеников</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a class="btn btn-primary" data-join-toggler>
+              <span class="span">Записаться</span>
+
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </div>
+          <div class="search-container" data-join-modal>
+            <div class="container">
+              <button
+                class="search-close-btn"
+                aria-label="Close search"
+                data-join-toggler
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="reg-wrapper">
+                <form id="register-form">
+                  <input
+                    type="text"
+                    name="fristname"
+                    id="fname"
+                    placeholder="Имя"
+                    class="search-field"
+                  /><br />
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lname"
+                    placeholder="Фамилия"
+                    class="search-field"
+                  /><br />
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Номер телефона"
+                    class="search-field"
+                  /><br />
+                  <input
+                    type="text"
+                    name="yonalish"
+                    id="yonalish"
+                    placeholder="Тип курса"
+                    class="search-field"
+                  />
+                  <br />
+                  <button
+                    type="submit"
+                    id="nn"
+                    class="header-action-btn login-btn"
+                  >
+                    Записаться
+                  </button>
+                  <!-- <input type="submit" class="header-action-btn login-btn" value="Register"> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+    -->
+
+        <section style="font-family: Manrope;"
+          id="blog"
+          class="section cta"
+          aria-label="workshop"
+          style="background-image: url('./assets/images/cta-bg.png')"
+        >
+          <div class="container">
+            <figure class="cta-banner">
+              <img
+                src="./assets/images/cta-banner.jpg"
+                width="580"
+                height="380"
+                loading="lazy"
+                alt="cta banner"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="cta-content">
+              <p class="section-subtitle">Мечтать. Верить. Достигать.</p>
+
+              <h2 class="h2 section-title">
+                "Наша миссия - вдохновить вас жизнью своей мечты"
+              </h2>
+
+              <p class="section-text">
+                Хотите ли вы освоить новый навык, получить
+                 квалификация для новой карьеры или для начала нового бизнеса,
+                <b>INTENT</b> может помочь вам достичь ваших целей и получить
+                лучшие результаты.
+              </p>
+
+              <a href="https://t.me/intenthub" class="btn btn-secondary">
+                <span class="span">Узнать больше  </span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- logo slider starts  -->
+
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-3.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-2.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-1.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-4.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-5.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/partner-logo-6.png"
+                height="200px"
+                width="200"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- logo slider ends -->
+
+        <!-- 
+        - #EVENT
+    
+
+    <section class="section event" id="event" aria-label="event">
+    	<div class="container">
+
+    		<p class="section-subtitle">Upcomming Event</p>
+
+    		<h2 class="h2 section-title">Let’s Join Our Community</h2>
+
+    		<ul class="grid-list">
+
+    			<li>
+    				<div class="event-card">
+
+    					<figure class="card-banner">
+    						<img src="./assets/images/event-1.jpg" width="370" height="250" loading="lazy"
+    						alt="Innovation & Technological Entrepreneurship Team" class="img-cover">
+    					</figure>
+
+    					<time class="badge" datetime="2022-12-04">04 Dec 2022</time>
+
+    					<div class="card-content">
+
+    						<address class="card-address">
+    							<ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+    							<span class="span">Alpaca Way Anaheim, CA 92805</span>
+    						</address>
+
+    						<h3 class="h3">
+    							<a href="#" class="card-title">Innovation & Technological Entrepreneurship Team</a>
+    						</h3>
+
+    						<a href="#" class="btn-link">
+    							<span class="span">Get Ticket</span>
+
+    							<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+    						</a>
+
+    					</div>
+
+    				</div>
+    			</li>
+
+    			<li>
+    				<div class="event-card">
+
+    					<figure class="card-banner">
+    						<img src="./assets/images/event-2.jpg" width="370" height="250" loading="lazy"
+    						alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover">
+    					</figure>
+
+    					<time class="badge" datetime="2022-10-30">30th Oct 2022</time>
+
+    					<div class="card-content">
+
+    						<address class="card-address">
+    							<ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+    							<span class="span">Ritter Avenue Detroit, MI 48226</span>
+    						</address>
+
+    						<h3 class="h3">
+    							<a href="#" class="card-title">Virtual Spring Part-time Jobs Fair for Student</a>
+    						</h3>
+
+    						<a href="#" class="btn-link">
+    							<span class="span">Get Ticket</span>
+
+    							<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+    						</a>
+
+    					</div>
+
+    				</div>
+    			</li>
+
+    			<li>
+    				<div class="event-card">
+
+    					<figure class="card-banner">
+    						<img src="./assets/images/event-3.jpg" width="370" height="250" loading="lazy"
+    						alt="Explorations of Regional Chief Executive Network" class="img-cover">
+    					</figure>
+
+    					<time class="badge" datetime="2022-09-18">18th Sep 2022</time>
+
+    					<div class="card-content">
+
+    						<address class="card-address">
+    							<ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+    							<span class="span">Stout Street York, PA 17401</span>
+    						</address>
+
+    						<h3 class="h3">
+    							<a href="#" class="card-title">Explorations of Regional Chief Executive Network</a>
+    						</h3>
+
+    						<a href="#" class="btn-link">
+    							<span class="span">Get Ticket</span>
+
+    							<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+    						</a>
+
+    					</div>
+
+    				</div>
+    			</li>
+
+    		</ul>
+
+    	</div>
+    </section>
+
+
+-->
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+-->
+
+    <footer style="font-family: Manrope;" id="footer" class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home">
+              <img
+                src="assets/images/logo2.png"
+                alt="Your logo"
+                title="Your logo"
+                style="height: 75px"
+              />
+            </a>
+            <p class="section-text">
+              Откройте новые профессиональные навыки и воплотите карьеру своей мечта,
+              через большой выбор приятных и информативных программ. 
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/intentuz-100612949392592/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/intenthub.uz/"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://t.me/intenthub" class="social-link">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Исследовать</p>
+            </li>
+
+            <li>
+              <a href="#aboutt" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">О нас</span>
+              </a>
+            </li>
+            <li>
+              <a href="#courses" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Курсы</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Блог и Новости</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/intenthub" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Часто задаваемые вопросы</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Сотрудничество</p>
+            </li>
+
+            <li>
+              <a href="https://fayxanur.netlify.app/" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Узбекистан</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.bsuir.by/" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Беларусь</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.tsu.ac.kr/tsumain/main" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">Южная Корея</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Главный офис</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="footer-link">
+                Беларусь, Минск, Я. Колоса 73/3
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+13647657839" class="footer-link"
+                >+375 25 547 79 98</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+13647657840" class="footer-link"
+                >+998 93 596 19 21</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="false"></ion-icon>
+
+              <a href="mailto:contact@eduhome.com" class="footer-link"
+                >fayxanur@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            <b>INTENT 2022.</b><br />
+            Все права защищены
+            <a href="https://fayxanur.netlify.app/" class="copyright-link"
+              >FAYXANUR-ENTERPRSES</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+-->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+-->
+    <script src="./assets/js/script.js" defer></script>
+    <!-- <script src="./assets/js/jquery.js" defer></script>
+<script type="text/javascript">
+    $(document).ready(function($) {
+     $('#register-form').submit(function(e) {
+         e.preventDefault();
+            console.log('ok')
+     });   
+    });
+</script> -->
+    <!-- 
+    - ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+  </body>
+</html>
